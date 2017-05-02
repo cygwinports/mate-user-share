@@ -1,7 +1,7 @@
 inherit httpd mate
 
 NAME="mate-user-share"
-VERSION=1.16.0
+VERSION=1.18.0
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="MATE user file sharing service"
@@ -14,7 +14,6 @@ REQUIRES="httpd httpd-mod_dnssd"
 
 CYGCONF_ARGS="
 	--disable-bluetooth
-	--with-gtk=3.0
 	--with-httpd=${HTTPD}
 	--with-modules-path=${HTTPD_LIBEXECDIR}
 "
